@@ -1,0 +1,3 @@
+# vuln,host,expires,reason
+# host may be * for all hosts; expires is YYYY-MM-DD (empty = never, not recommended)
+# CVE-2023-50495,docker01,2027-03-01,tic is not used on this host; Ubuntu priority low

@@ -1,0 +1,28 @@
+{
+ "title": "DEMO subset",
+ "catalogVersion": "demo",
+ "count": 3,
+ "vulnerabilities": [
+  {
+   "cveID": "CVE-2025-32463",
+   "vendorProject": "Sudo",
+   "product": "Sudo",
+   "dateAdded": "2025-09-29",
+   "knownRansomwareCampaignUse": "Unknown"
+  },
+  {
+   "cveID": "CVE-2024-53104",
+   "vendorProject": "Linux",
+   "product": "Kernel",
+   "dateAdded": "2025-02-05",
+   "knownRansomwareCampaignUse": "Unknown"
+  },
+  {
+   "cveID": "CVE-2023-4911",
+   "vendorProject": "GNU",
+   "product": "GNU C Library",
+   "dateAdded": "2023-11-21",
+   "knownRansomwareCampaignUse": "Unknown"
+  }
+ ]
+}

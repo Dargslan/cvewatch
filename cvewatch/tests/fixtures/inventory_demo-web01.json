@@ -1,0 +1,102 @@
+{
+ "collector": "1.0.0",
+ "collected": "2026-11-21T06:00:00+00:00",
+ "hostname": "demo-web01.example",
+ "os": "Ubuntu 24.04.1 LTS",
+ "os_id": "ubuntu",
+ "version_id": "24.04",
+ "ecosystem": "Ubuntu:24.04:LTS",
+ "kernel": "6.8.0-31-generic",
+ "format": "deb",
+ "packages": [
+  {
+   "name": "openssh-server",
+   "version": "1:9.6p1-3ubuntu13",
+   "source": "openssh",
+   "source_version": "1:9.6p1-3ubuntu13"
+  },
+  {
+   "name": "openssh-client",
+   "version": "1:9.6p1-3ubuntu13",
+   "source": "openssh",
+   "source_version": "1:9.6p1-3ubuntu13"
+  },
+  {
+   "name": "sudo",
+   "version": "1.9.15p5-3ubuntu5",
+   "source": "sudo",
+   "source_version": "1.9.15p5-3ubuntu5"
+  },
+  {
+   "name": "linux-image-6.8.0-31-generic",
+   "version": "6.8.0-31.31",
+   "source": "linux-signed",
+   "source_version": "6.8.0-31.31"
+  },
+  {
+   "name": "libssl3t64",
+   "version": "3.0.13-0ubuntu3",
+   "source": "openssl",
+   "source_version": "3.0.13-0ubuntu3"
+  },
+  {
+   "name": "openssl",
+   "version": "3.0.13-0ubuntu3",
+   "source": "openssl",
+   "source_version": "3.0.13-0ubuntu3"
+  },
+  {
+   "name": "curl",
+   "version": "8.5.0-2ubuntu10",
+   "source": "curl",
+   "source_version": "8.5.0-2ubuntu10"
+  },
+  {
+   "name": "libcurl4t64",
+   "version": "8.5.0-2ubuntu10",
+   "source": "curl",
+   "source_version": "8.5.0-2ubuntu10"
+  },
+  {
+   "name": "tar",
+   "version": "1.35+dfsg-3build1",
+   "source": "tar",
+   "source_version": "1.35+dfsg-3build1"
+  },
+  {
+   "name": "libncursesw6",
+   "version": "6.4+20240113-1ubuntu2",
+   "source": "ncurses",
+   "source_version": "6.4+20240113-1ubuntu2"
+  },
+  {
+   "name": "nginx",
+   "version": "1.24.0-2ubuntu7",
+   "source": "nginx",
+   "source_version": "1.24.0-2ubuntu7"
+  },
+  {
+   "name": "bash",
+   "version": "5.2.21-2ubuntu4",
+   "source": "bash",
+   "source_version": "5.2.21-2ubuntu4"
+  }
+ ],
+ "security_updates": [
+  {
+   "package": "openssh-server",
+   "from": "1:9.6p1-3ubuntu13",
+   "to": "1:9.6p1-3ubuntu13.14",
+   "advisory": "",
+   "severity": ""
+  },
+  {
+   "package": "sudo",
+   "from": "1.9.15p5-3ubuntu5",
+   "to": "1.9.15p5-3ubuntu5.24.04.1",
+   "advisory": "",
+   "severity": ""
+  }
+ ],
+ "reboot_required": false
+}

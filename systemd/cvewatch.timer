@@ -1,0 +1,10 @@
+[Unit]
+Description=Daily cvewatch vulnerability scan
+
+[Timer]
+OnCalendar=*-*-* 06:15
+RandomizedDelaySec=20m
+Persistent=true
+
+[Install]
+WantedBy=timers.target

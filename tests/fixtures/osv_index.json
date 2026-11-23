@@ -1,0 +1,35 @@
+{
+ "Ubuntu:24.04:LTS|openssh": [
+  "UBUNTU-CVE-2024-6387"
+ ],
+ "Ubuntu:24.04:LTS|sudo": [
+  "UBUNTU-CVE-2025-32463"
+ ],
+ "Ubuntu:24.04:LTS|linux": [
+  "UBUNTU-CVE-2024-53104"
+ ],
+ "Ubuntu:24.04:LTS|openssl": [
+  "UBUNTU-CVE-2024-5535"
+ ],
+ "Ubuntu:24.04:LTS|curl": [
+  "UBUNTU-CVE-2024-7264"
+ ],
+ "Ubuntu:24.04:LTS|tar": [
+  "UBUNTU-CVE-2025-45582"
+ ],
+ "Ubuntu:24.04:LTS|ncurses": [
+  "UBUNTU-CVE-2023-50495"
+ ],
+ "Ubuntu:24.04:LTS|nginx": [
+  "UBUNTU-CVE-2025-23419"
+ ],
+ "Debian:13|postgresql-17": [
+  "DEBIAN-CVE-2025-1094"
+ ],
+ "Debian:13|openssl": [
+  "DEBIAN-CVE-2025-9230"
+ ],
+ "Debian:13|systemd": [
+  "DEBIAN-CVE-2023-31437"
+ ]
+}

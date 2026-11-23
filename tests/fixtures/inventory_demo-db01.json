@@ -1,0 +1,39 @@
+{
+ "collector": "1.0.0",
+ "collected": "2026-11-21T06:00:00+00:00",
+ "hostname": "demo-db01.example",
+ "os": "Debian GNU/Linux 13 (trixie)",
+ "os_id": "debian",
+ "version_id": "13",
+ "ecosystem": "Debian:13",
+ "kernel": "6.12.38+deb13-amd64",
+ "format": "deb",
+ "packages": [
+  {
+   "name": "postgresql-17",
+   "version": "17.2-1",
+   "source": "postgresql-17",
+   "source_version": "17.2-1"
+  },
+  {
+   "name": "libssl3t64",
+   "version": "3.5.1-1",
+   "source": "openssl",
+   "source_version": "3.5.1-1"
+  },
+  {
+   "name": "systemd",
+   "version": "257.7-1",
+   "source": "systemd",
+   "source_version": "257.7-1"
+  },
+  {
+   "name": "openssh-server",
+   "version": "1:10.0p1-7",
+   "source": "openssh",
+   "source_version": "1:10.0p1-7"
+  }
+ ],
+ "security_updates": [],
+ "reboot_required": false
+}

@@ -1,0 +1,25 @@
+[Unit]
+Description=cvewatch - scan Linux hosts for known vulnerabilities
+Documentation=file:///usr/local/lib/cvewatch/README.md
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+User=cvewatch
+Group=cvewatch
+ExecStart=/usr/local/bin/cvewatch -c /etc/cvewatch/cvewatch.ini scan
+Nice=10
+IOSchedulingClass=idle
+TimeoutStartSec=1h
+# hardening: the scanner needs only its own data directory
+NoNewPrivileges=yes
+PrivateTmp=yes
+ProtectSystem=strict
+ProtectHome=yes
+ReadWritePaths=/var/lib/cvewatch
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+ProtectControlGroups=yes
+RestrictSUIDSGID=yes
+LockPersonality=yes

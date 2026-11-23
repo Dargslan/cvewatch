@@ -1,0 +1,2 @@
+# vuln,host,expires (YYYY-MM-DD),reason
+CVE-2023-50495,demo-web01,2027-03-01,low impact: tic is not used on this host

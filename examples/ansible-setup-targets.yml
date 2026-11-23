@@ -1,0 +1,30 @@
+# Prepare many hosts for cvewatch at once.
+#   ansible-playbook -i inventory.ini ansible-setup-targets.yml -e scanner_ip=192.168.10.30
+- name: Prepare cvewatch targets
+  hosts: all
+  become: true
+  vars:
+    scanner_ip: "192.168.10.30"
+    scanner_pubkey: "{{ lookup('file', 'files/cvewatch.pub') }}"
+  tasks:
+    - name: Install collector
+      ansible.builtin.copy:
+        src: files/cvewatch.py
+        dest: /usr/local/lib/cvewatch/cvewatch.py
+        mode: "0755"
+      register: collector
+
+    - name: Create unprivileged cvewatch user
+      ansible.builtin.user:
+        name: cvewatch
+        system: true
+        home: /var/lib/cvewatch
+        shell: /bin/sh
+        password_lock: true
+
+    - name: Authorise the scanner key for the collector only
+      ansible.posix.authorized_key:
+        user: cvewatch
+        key: "{{ scanner_pubkey }}"
+        key_options: 'from="{{ scanner_ip }}",restrict,command="/usr/bin/python3 /usr/local/lib/cvewatch/cvewatch.py collect"'
+        exclusive: true
